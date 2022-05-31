@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'EudoxusSansLight'; 
+	src: url('../fonts/Eudoxus-Sans-font/EudoxusSans-ExtraLight.ttf'); 
+}
+@font-face {
+	font-family: 'EudoxusSansRegular'; 
+	src: url('../fonts/Eudoxus-Sans-font/EudoxusSans-Regular.ttf'); 
+}
+@font-face {
+	font-family: 'EudoxusSansMedium'; 
+	src: url('../fonts/Eudoxus-Sans-font/EudoxusSans-Medium.ttf'); 
+}
+@font-face {
+	font-family: 'EudoxusSansBold'; 
+	src: url('../fonts/Eudoxus-Sans-font/EudoxusSans-Bold.ttf'); 
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+	color: black;
+}
+button{
+    cursor: pointer;
+}
+ul,li,ol{
+    list-style: none;
+}
+body{
+	z-index: 0;
+	scroll-behavior: smooth;
+}

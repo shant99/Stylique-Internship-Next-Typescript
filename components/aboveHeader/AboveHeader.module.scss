@@ -1,0 +1,24 @@
+@import "../../styles/scss/variables.scss";
+@import "../../styles/scss/mixins.scss";
+
+.above-header-container {
+  width: 100%;
+  background-color: $stylique-grey-1;
+  @include flex(center, center);
+  padding: 6px 6px;
+  .above-header {
+    @include font-style(12px, 500, $stylique-grey-2, "EudoxusSansLight");
+    & span {
+      font-weight: 700;
+    }
+    & .above-header-info {
+      font-family: "EudoxusSansRegular";
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .above-header-container {
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+@import '../../styles/scss/mixins.scss';
+@import '../../styles/scss/variables.scss';
+
+.header-container{
+    width: 100%;
+    padding: 24px 0 28px 0;
+    border-bottom: 1px solid $stylique-grey-8;
+}
+.header{
+    display: grid;
+    grid-template: auto / 1fr 2fr 1fr;
+    justify-items: center;
+    & .stylique-logo{
+        height: 20px ;
+     }
+    & ul{
+        display: flex;
+        gap: 24px;
+        & a {
+            @include font-style(16px , 400 , $stylique-grey-3 , 'EudoxusSansLight');
+        }
+    }
+}
+
+@media (max-width: 1200px){
+
+}
