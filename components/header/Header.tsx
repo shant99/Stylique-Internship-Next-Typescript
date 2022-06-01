@@ -3,7 +3,7 @@ import StyliqueLogo from "../../icons/StyliqueLogo";
 import { useState } from "react";
 
 const Header: React.FC = () => {
-  const [headerBurger, setHeaderBurger] = useState(true);
+  const [headerBurger, setHeaderBurger] = useState(false);
 
   const headerBurgerHandler = (e: React.SyntheticEvent): void => {
     setHeaderBurger((prev:boolean) => !prev);
