@@ -35,3 +35,9 @@ body{
 	z-index: 0;
 	scroll-behavior: smooth;
 }
+
+@media (max-width: 920px){
+	body.lock{
+		overflow: hidden;
+	}
+}
