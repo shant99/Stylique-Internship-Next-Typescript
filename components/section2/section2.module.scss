@@ -1,0 +1,33 @@
+.section2{
+    padding: 80px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+.section2-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section2-slice1{
+    font-weight: 500;
+    font-size: 32px;
+    font-family: 'EudoxusSansRegular';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.section2-slice2{
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'EudoxusSansLight';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}

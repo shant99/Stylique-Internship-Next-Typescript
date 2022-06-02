@@ -1,0 +1,30 @@
+.section3-companies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    padding: 10px 0 120px 0;
+}
+
+.section3-companies-header{
+    font-weight: 500;
+    font-size: 28px;
+    color: #191919;
+    font-family: 'EudoxusSansRegular';
+}
+
+.section3-companies-list{
+    display: flex;
+    gap: 36px;
+}
+.section3-companies-list-companie{
+    width: 200px;
+    height: 200px;
+    background-color: #F7F7F7;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

@@ -20,6 +20,11 @@
         & a {
             @include font-style(16px , 400 , $stylique-grey-3 , 'EudoxusSansLight');
         }
+        & a:hover,
+        & a:focus,
+        & a:active{
+            border-bottom: 1px solid $stylique-grey-3;
+        }
     }
 }
 .header-burger{
@@ -33,7 +38,7 @@
         padding: 0 40px;
     }
     .stylique-logo{
-        z-index: 2;
+        z-index: 200;
     }
     .header-burger{
         display: block;
@@ -41,7 +46,7 @@
         width: 30px ;
         height: 20px ;
         cursor: pointer;
-        z-index: 2;
+        z-index: 200;
     }
     .header-burger span{
         position: absolute;
@@ -88,7 +93,7 @@
         width: 100%;
         height: 100%;
         background-color: white;
-        z-index: 1;
+        z-index: 100;
         display: flex;
         justify-content: center;
         align-items: flex-start;

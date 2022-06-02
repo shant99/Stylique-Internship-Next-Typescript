@@ -1,0 +1,30 @@
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 68px;
+}
+.list-li{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+.list-tick-wrapper{
+    width: 32px;
+    height: 32px;
+    background-color: #F7F7F8;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-text{
+    width: 255px;
+    white-space: normal;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'EudoxusSansLight';
+}
