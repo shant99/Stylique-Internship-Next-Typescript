@@ -9,14 +9,6 @@ const Section4 = () => {
     <div className={styles["section4-container"]}>
       <div className={styles["section4"]}>
         <div className={styles["section4-video"]}>
-          {/* <ReactPlayer
-            className="react-player"
-            url="https://stylique.am/images/videos/apply_1.mp4"
-            width="100%"
-            height="100%"
-            playing={true}
-          /> */}
-          {/* <button className={}>play</button> */}
         </div>
         <div className={styles["section4-video-info"]}>
           <h1 className={styles["section4-video-info-header"]}>
