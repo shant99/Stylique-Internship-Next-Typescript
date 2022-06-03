@@ -64,21 +64,21 @@ function Footer() {
             </li>
             <li>
               <span>
-                <Visa width={67} heigth={21} className="footer-visa-icon" />
+                {/* <Visa width={67} heigth={21} className="footer-visa-icon" /> */}
               </span>
               <span>
-                <Maestro
+                {/* <Maestro
                   width={66}
                   heigth={36}
                   className="footer-maestro-icon"
-                />
+                /> */}
               </span>
               <span>
-                <MasterCard
+                {/* <MasterCard
                   width={60}
                   height={40}
                   className="footer-masterCard-icon"
-                />
+                /> */}
               </span>
             </li>
             <br />
@@ -112,7 +112,7 @@ function Footer() {
             </li>
             <br />
             <li>
-              <a href="#">Mo-Sa von 9:00 – 20:00</a>
+              <a href="#">Mo-Sa von 9:00  20:00</a>
             </li>
           </ul>
         </div>
