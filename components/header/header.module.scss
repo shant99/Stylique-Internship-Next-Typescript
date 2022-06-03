@@ -5,9 +5,16 @@
     width: 100%;
     padding: 24px 0 28px 0;
     border-bottom: 1px solid $stylique-grey-8;
+    background-color: white;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 .header{
+    z-index: 100;
     display: grid;
     grid-template: auto / 1fr 2fr 1fr;
     justify-items: center;

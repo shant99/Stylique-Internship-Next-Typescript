@@ -3,71 +3,85 @@ import Trophy from "../../icons/Trophy";
 import Shop from "../../icons/Shop";
 import Hourglass from "../../icons/Hourglass";
 import ArrowDown from "../../icons/ArrowDown";
-import ButtonTermin from '../buttonTermin/ButtonTermin'
+import ButtonTermin from "../buttonTermin/ButtonTermin";
+import { useDispatch, useSelector } from "react-redux";
 
-const Section1 = () => {
+import { MouseEvent, useRef } from "react";
 
+const Section1 = ({}) => {
+  const { section2 } = useSelector((state: any) => state.vendorsPageSlice);
+
+  const downHandler = () => {
+    window.scroll({
+      behavior: "smooth",
+      top: section2,
+    });
+  };
 
   return (
     <div className={styles["section1"]}>
       <div className={styles["section1-img-wrapper"]}>
-          <div className={styles["section1-img-slice1-wrapper"]}>
-            <p className={styles["section1-img-slice1"]}>
-              Verkaufe schnell und einfach{" "}
-            </p>
-            <p className={styles["section1-img-slice1"]}>
-              online ohne hohe Kosten
-            </p>
-          </div>
-          <div className={styles["section1-img-slice2-wrapper"]}>
-            <p className={styles["section1-img-slice2"]}>
-              Inszeniere Dich und Deine Marken im{" "}
-            </p>
-            <p className={styles["section1-img-slice2"]}>
-              hochwertigen Umfeld.
-            </p>
-          </div>
-          <ButtonTermin className={styles['section1-img-slice3']} clickHandler={undefined}/>
+        <div className={styles["section1-img-slice1-wrapper"]}>
+          <h1 className={styles["section1-img-slice1"]}>
+            Verkaufe schnell und einfach{" "}
+          </h1>
+          <h1 className={styles["section1-img-slice1"]}>
+            online ohne hohe Kosten
+          </h1>
+        </div>
+        <div className={styles["section1-img-slice2-wrapper"]}>
+          <h1 className={styles["section1-img-slice2"]}>
+            Inszeniere Dich und Deine Marken im{" "}
+          </h1>
+          <h1 className={styles["section1-img-slice2"]}>hochwertigen Umfeld.</h1>
+        </div>
+        <ButtonTermin
+          className={styles["section1-img-slice3"]}
+          clickHandler={undefined}
+        />
         <div className={styles["section1-img-slice4-wrapper"]}>
-          <a href="#section2"  className={styles["section1-img-slice4"]}>
+          <button
+            onClick={(e) => downHandler()}
+            className={styles["section1-img-slice4"]}
+          >
             <ArrowDown />
-          </a>
+          </button>
         </div>
       </div>
 
       <div className={styles["under-image"]}>
         <div className={styles["under-image-slice"]}>
           <Trophy className={styles["under-image-slice-child1"]} />
-          <p>
-            <span className={styles["under-image-slice-child2"]}>
+          <div>
+            <p className={styles["under-image-slice-child2"]}>
               Spare Kosten und Mühe für den{" "}
-            </span>
-            <span className={styles["under-image-slice-child3"]}>
+            </p>
+            <p className={styles["under-image-slice-child3"]}>
               eigenen Online-Shop.
-            </span>
-          </p>
+            </p>
+          </div>
         </div>
         <div className={styles["under-image-slice"]}>
           <Shop className={styles["under-image-slice-child1"]} />
-          <p>
-            <span className={styles["under-image-slice-child2"]}>
+          <div>
+            <p className={styles["under-image-slice-child2"]}>
               Ermögliche den Online-Verkauf im
-            </span>
-            <span className={styles["under-image-slice-child3"]}>
+            </p>
+            <p className={styles["under-image-slice-child3"]}>
               Einklang mit deinen Handelspartnern.
-            </span>
-          </p>
+            </p>
+          </div>
         </div>
         <div className={styles["under-image-slice"]}>
           <Hourglass className={styles["under-image-slice-child1"]} />
-          <p>
-            <span className={styles["under-image-slice-child2"]}>
+          <div>
+            <p className={styles["under-image-slice-child2"]}>
               Reagiere jetzt auf verändertes
-            </span>
-            <span className={styles["under-image-slice-child3"]}>
+            </p>
+            <p className={styles["under-image-slice-child3"]}>
               Kunden-und Einkaufsverhalten.
-            </span>
-          </p>
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -16,9 +16,9 @@ function Section3() {
   return (
     <div className={styles["section3"]}>
       <div className={styles["section3-companies"]}>
-        <p className={styles["section3-companies-header"]}>
+        <h1 className={styles["section3-companies-header"]}>
           Diese und andere Partner haben sich bereits positioniert:
-        </p>
+        </h1>
         <div className={styles["section3-companies-list"]}>
             {
                 companiesIcons.map(item => {

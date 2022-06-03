@@ -28,3 +28,10 @@
     font-weight: 400;
     font-family: 'EudoxusSansLight';
 }
+
+@media (max-width: 670px){
+    .list{
+        display: grid;
+        grid-template: auto / 1fr;
+    }
+}

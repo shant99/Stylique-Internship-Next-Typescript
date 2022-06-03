@@ -33,6 +33,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 15px;
 }
 .section1-img-slice1-wrapper {
   margin-bottom: 12px;
@@ -41,6 +42,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   .section1-img-slice1 {
     color: white;
     font-size: 56px;
@@ -56,6 +58,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   .section1-img-slice2 {
     color: white;
     font-size: 32px;
@@ -63,6 +66,7 @@
     font-family: "EudoxusSansMedium";
   }
 }
+
 .section1-img-slice4-wrapper {
   width: 100%;
   position: absolute;
@@ -83,6 +87,7 @@
     cursor: pointer;
     scroll-behavior: smooth;
   }
+
 }
 
 .under-image {
