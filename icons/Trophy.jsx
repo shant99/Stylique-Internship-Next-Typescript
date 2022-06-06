@@ -1,8 +1,8 @@
 function Trophy({className = ''}) {
   return (
     <svg
-      width="43"
-      height="44"
+      width="43px"
+      height="44px"
       viewBox="0 0 43 44"
       fill="none"
       className={className}

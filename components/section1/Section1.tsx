@@ -60,8 +60,6 @@ const Section1 = ({}) => {
           <div>
             <p className={styles["under-image-slice-child2"]}>
               Ermögliche den Online-Verkauf im
-            </p>
-            <p className={styles["under-image-slice-child3"]}>
               Einklang mit deinen Handelspartnern.
             </p>
           </div>
@@ -71,8 +69,6 @@ const Section1 = ({}) => {
           <div>
             <p className={styles["under-image-slice-child2"]}>
               Reagiere jetzt auf verändertes
-            </p>
-            <p className={styles["under-image-slice-child3"]}>
               Kunden-und Einkaufsverhalten.
             </p>
           </div>
