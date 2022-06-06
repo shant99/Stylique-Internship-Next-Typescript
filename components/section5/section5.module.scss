@@ -1,0 +1,43 @@
+.section5-container{
+    width: 100%;
+    background-color: #FAFAFA;
+}
+.section5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    padding: 80px 80px;
+}
+.section5-container-header{
+    font-weight: 500;
+    font-size: 28px;
+    color: #191919;
+    font-family: 'EudoxusSansRegular';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section5-container-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+.section5-container-body-slice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    & p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        text-align: center;
+    }
+}

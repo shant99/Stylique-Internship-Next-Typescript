@@ -2,51 +2,87 @@
     padding-bottom: 120px;
 }
 .section4{
-    display: flex;
-    gap: 157px;
+   display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
+    flex-wrap: nowrap;
+    gap: 157px;
+    padding: 20px 120px;
 }
-.section4-video{
-    width: 708px;
-    height: 398px;
-    background-color: grey;
+.section4-video-player-wrapper{
+    width: 63%;
+}
+.section4-video-info-wrapper{
+    width: 47%;
+    min-height: 180px;
+    background-color: #F7F7F7;
+    position: relative; 
+}
+.section4-video-info{
+    position: absolute;
+    top: -20px;
+    left: -25px;
+    display: flex;
+    flex-direction: column;
+}
+.section4-video-info-header{
+    color: #191919;
+    font-weight: 500;
+    font-size: 32px;
+    width: 100%;
+    font-family: 'EudoxusSansRegular';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+}
+.section4-video-info-body{
+    width: 100%;
+    font-family: 'EudoxusSansLight';
+
+    font-weight: 500;
+    padding-top: 5px;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
 }
 
 
-// .section4-video-info{
-//     position: relative;
-//     width: 536px;   
-//     height: 180px;
-//     background-color: #F7F7F7;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     .section4-video-info-header{
-//         position: absolute;
-//         top: -26px;
-//         left: -23px;
-//     }
-//     .section4-video-info-body{
-//         position: absolute;
-//         bottom: 26px;
-//         left: -23px;
-//     }
-//     h1{
-//         font-weight: 500;
-//         font-family: 'EudoxusSansRegular';
-//         margin-bottom: 8px;
-//     }
-//     p{
-//         font-size: 16px;
-//         font-family: 'EudoxusSansLight';
-//         font-weight: 400;
-//     }
-// }
 
-@media (max-width: 990px){
+
+@media (max-width: 1300px){
+    .section4{
+
+         flex-wrap: wrap;
+        padding: 20px 60px;
+     
+     }
+     .section4-video-player-wrapper{
+        width: 83%;
+    }
+    .section4-video-info-wrapper{
+        width: 70%;
+    }
+}
+@media (max-width: 928px){
+    .section4{
+
+        flex-wrap: wrap;
+       padding: 20px;
     
+    }
+    .section4-video-info-header{
+
+
+
+    }
+    .section4-video-info-body{
+
+ 
+    }
+    .section4-video-info-wrapper{
+        width: 80%;
+    }
+
 }
