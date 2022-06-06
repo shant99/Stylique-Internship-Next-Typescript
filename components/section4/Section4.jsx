@@ -18,7 +18,7 @@ const Section4 = () => {
     <div className={styles["section4-container"]} ref={ref}>
       <div className={styles["section4"]}>
         <div className={styles["section4-video-player-wrapper"]}>
-          <Player url={"http://localhost:3000/video.mp4"} />
+          <Player url={"https://stylique.am/images/videos/apply_1.mp4"} />
         </div>
         <div className={styles["section4-video-info-wrapper"]}>
           <div className={styles["section4-video-info"]}>
