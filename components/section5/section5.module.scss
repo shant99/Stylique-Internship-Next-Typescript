@@ -32,6 +32,10 @@
     justify-content: center;
     align-items: center;
     gap: 23px;
+    & .section5-container-body-slice-span{
+        width: 64px;
+        height: 64px;
+    }
     & p{
         display: flex;
         flex-direction: column;

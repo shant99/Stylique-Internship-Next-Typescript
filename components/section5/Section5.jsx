@@ -13,19 +13,27 @@ function Section5() {
         </h2>
         <div className={styles["section5-container-body"]}>
           <div className={styles["section5-container-body-slice"]}>
+            <span className={styles["section5-container-body-slice-span"]}>
             <Schedule />
+            </span>
             <p>
               <span>1.</span> <span>Beratungstermin reservieren</span>{" "}
             </p>
           </div>
           <div className={styles["section5-container-body-slice"]}>
+            <span className={styles["section5-container-body-slice-span"]}>
+
             <Control />
+            </span>
             <p>
               <span>2.</span> <span>Unverbindlich testen</span>{" "}
             </p>
           </div>
           <div className={styles["section5-container-body-slice"]}>
+            <span className={styles["section5-container-body-slice-span"]}>
+
             <FundView />
+            </span>
             <p>
               <span>3.</span> <span>Potenzial entdecken</span>{" "}
             </p>
