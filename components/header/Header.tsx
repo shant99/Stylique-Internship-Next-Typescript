@@ -1,19 +1,52 @@
 import styles from "./header.module.scss";
 import StyliqueLogo from "../../icons/StyliqueLogo";
 import { useState } from "react";
+import { useSelector } from "react-redux";
+
+
 
 const Header: React.FC = () => {
   const [headerBurger, setHeaderBurger] = useState(false);
+  const {section2 , section3 , section4 , section5} = useSelector((state: any )=> state.vendorsPageSlice)
 
   const headerBurgerHandler = (e: React.SyntheticEvent): void => {
     setHeaderBurger((prev:boolean) => !prev);
-    console.log(document.body.classList.toggle('lock'))
-    console.log(document.body.className)
+    document.body.classList.toggle('lock')
+    
   };
  
   const headerMenuActive = headerBurger
     ? (styles["header-menu-active"] )
     : styles[''];
+
+    const clickHandler1 = () => {
+      window.scroll({
+        behavior: "smooth",
+        top: section2,
+      });
+      setHeaderBurger((prev:boolean) => !prev);
+    }
+    const clickHandler2 = () => {
+      window.scroll({
+        behavior: "smooth",
+        top: section3,
+      });
+      setHeaderBurger((prev:boolean) => !prev);
+    }
+    const clickHandler3 = () => {
+      window.scroll({
+        behavior: "smooth",
+        top: section4,
+      });
+      setHeaderBurger((prev:boolean) => !prev);
+    }
+    const clickHandler4 = () => {
+      window.scroll({
+        behavior: "smooth",
+        top: section5,
+      });
+      setHeaderBurger((prev:boolean) => !prev);
+    }
  
   return (
     <div className={styles["header-container"]}>
@@ -25,16 +58,16 @@ const Header: React.FC = () => {
         <div className={styles["header-menu"]+ " " + headerMenuActive }>
           <ul>
             <li>
-              <a href="#">Vorteile</a>
+              <button onClick={clickHandler1}>Vorteile</button>
             </li>
             <li>
-              <a href="#">Unsere Partner</a>
+              <button  onClick={clickHandler2}>Unsere Partner</button>
             </li>
             <li>
-              <a href="#">So gehts</a>
+              <button  onClick={clickHandler3}>So gehts</button>
             </li>
             <li>
-              <a href="#">Unser Versprechen</a>
+              <button onClick={clickHandler4}>Unser Versprechen</button>
             </li>
           </ul>
         </div>

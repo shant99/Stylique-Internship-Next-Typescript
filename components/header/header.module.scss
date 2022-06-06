@@ -24,12 +24,15 @@
     & ul{
         display: flex;
         gap: 24px;
-        & a {
+        & button {
             @include font-style(16px , 400 , $stylique-grey-3 , 'EudoxusSansLight');
+            border: none;
+            background-color: transparent;
+            border: 1px solid transparent
         }
-        & a:hover,
-        & a:focus,
-        & a:active{
+        & button:hover,
+        & button:focus,
+        & button:active{
             border-bottom: 1px solid $stylique-grey-3;
         }
     }

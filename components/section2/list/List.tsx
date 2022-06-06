@@ -22,10 +22,10 @@ const List = () => {
         {arr1.map((item) => {
           return (
             <li key={v4()} className={styles["list-li"]}>
-              <p className={styles["list-tick-wrapper"]}>
+              <span className={styles["list-tick-wrapper"]}>
                 <Tick className={styles["list-tick"]} />
-              </p>{" "}
-              <p className={styles["list-text"]}>{item}</p>
+              </span>{" "}
+              <span className={styles["list-text"]}>{item}</span>
             </li>
           );
         })}
@@ -34,10 +34,10 @@ const List = () => {
         {arr2.map((item) => {
           return (
             <li key={v4()} className={styles["list-li"]}>
-              <p className={styles["list-tick-wrapper"]}>
+              <span className={styles["list-tick-wrapper"]}>
                 <Tick className={styles["list-tick"]} />
-              </p>{" "}
-              <p className={styles["list-text"]}>{item}</p>
+              </span>{" "}
+              <span className={styles["list-text"]}>{item}</span>
             </li>
           );
         })}

@@ -24,16 +24,13 @@ const Section1 = ({}) => {
         <div className={styles["section1-img-slice1-wrapper"]}>
           <h1 className={styles["section1-img-slice1"]}>
             Verkaufe schnell und einfach{" "}
-          </h1>
-          <h1 className={styles["section1-img-slice1"]}>
             online ohne hohe Kosten
           </h1>
         </div>
         <div className={styles["section1-img-slice2-wrapper"]}>
-          <h1 className={styles["section1-img-slice2"]}>
-            Inszeniere Dich und Deine Marken im{" "}
-          </h1>
-          <h1 className={styles["section1-img-slice2"]}>hochwertigen Umfeld.</h1>
+          <h2 className={styles["section1-img-slice2"]}>
+            Inszeniere Dich und Deine Marken im hochwertigen Umfeld.
+          </h2>
         </div>
         <ButtonTermin
           className={styles["section1-img-slice3"]}
@@ -54,10 +51,7 @@ const Section1 = ({}) => {
           <Trophy className={styles["under-image-slice-child1"]} />
           <div>
             <p className={styles["under-image-slice-child2"]}>
-              Spare Kosten und Mühe für den{" "}
-            </p>
-            <p className={styles["under-image-slice-child3"]}>
-              eigenen Online-Shop.
+              Spare Kosten und Mühe für den eigenen Online-Shop.
             </p>
           </div>
         </div>

@@ -1,7 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-// import Maestro from "../../Icons/Maestro";
-// import MasterCard from "../../Icons/MasterCard";
-// import Visa from "../../Icons/Visa";
+// 22
 import styles from "./footer.module.scss";
 
 function Footer() {

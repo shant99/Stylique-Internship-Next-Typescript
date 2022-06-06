@@ -18,16 +18,12 @@ const Section2 = () => {
     <div className={styles["section2"]} ref={ref} >
       <div className={styles["section2-container"]}>
         <div className={styles["section2-slice1"]}>
-          <p>Deine Kunden recherchieren Online. </p>
-          <p>Finden sie Dich?</p>      
+          <h4>Deine Kunden recherchieren Online . Finden sie Dich? </h4>    
         </div>
         <div className={styles["section2-slice2"]}>
           <p>
             Fakt ist - Händler, die sich frühzeitig im digitalen Markt
-            positionieren,
-          </p>
-          <p> sichern sich einen klaren Wettbewerbsvorteil.</p>
-          <p>
+            positionieren, sichern sich einen klaren Wettbewerbsvorteil.
             Der Markt der Innenausbaubranche ist in Bewegung. Beweg Dich mit!
           </p>
         </div>
