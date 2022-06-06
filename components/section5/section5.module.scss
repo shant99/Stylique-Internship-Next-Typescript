@@ -29,12 +29,15 @@
 .section5-container-body-slice{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 23px;
     & .section5-container-body-slice-span{
         width: 64px;
         height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     & p{
         display: flex;
