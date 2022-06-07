@@ -151,18 +151,23 @@
         display: none;
     }
     .section6-tab-wrapper{
-
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .section6-tab{
+        text-align: start;
     }
     .section6-tab-under-content{
         display: block;
-        font-size: 26px;
+        font-size: 18px;
         font-weight: 700;
-        padding: 5px;
+        background-color: #f2eded;
+        padding: 25px;
         border: none;
-        background-color: transparent;
         border-bottom: 1px solid transparent;
         font-family: 'EudoxusSansRegular';
         opacity: 1;
         text-align: center;
+
     }
 }

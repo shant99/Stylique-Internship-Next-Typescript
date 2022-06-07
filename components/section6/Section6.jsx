@@ -22,7 +22,7 @@ const tabsContent = [
 
 function Section6() {
   const [tabIndex, setTabIndex] = useState(0);
-  const [underContent, setUnderContent] = useState(false);
+  const [underContent, setUnderContent] = useState(true);
 
   function viewContent() {
     const arr = JSON.parse(JSON.stringify(tabsContent));
@@ -33,7 +33,10 @@ function Section6() {
 
   function tabClickHandler(e, index) {
     setTabIndex(index);
-    setUnderContent((prev) => !prev);
+    setUnderContent((prev) => {
+      return !prev
+      
+    });
   }
 
   function tabsNavButtonClickHandler_Up(e) {
@@ -92,10 +95,11 @@ function Section6() {
                         {index === tabs.length - 1 ? "!" : index + 1}
                       </span>
                     </div>
-                    {underContent ? (
-                      <motion.p                     initial={{ y: 100, opacity: 0 }}
+                    { (tabIndex === index )? (
+                      <motion.p                   
+                        initial={{ y: -100, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
-                      exit={{ y: -10, opacity: 0 }}
+                      exit={{ y: 10, opacity: 0 }}
                       transition={{ duration: 0.8 }}
                       className={styles["section6-tab-under-content"]}>
                         {tabIndex === index ? tabsContent[tabIndex] : ""}

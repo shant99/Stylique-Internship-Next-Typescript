@@ -25,10 +25,10 @@ const Section4 = () => {
             <h4 className={styles["section4-video-info-header"]}>    
                  Das sagen unsere Partner.   
             </h4>
-            <p className={styles["section4-video-info-body"]}>
+            <div className={styles["section4-video-info-body"]}>
               <h4 className={styles["section4-video-info-body-header"]}>Steffen Männle</h4>
               <span>Pur Natur</span> Managing Director Sales & Marketing
-            </p>
+            </div>
           </div>
         </div>
       </div>
