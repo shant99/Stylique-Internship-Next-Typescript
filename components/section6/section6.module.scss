@@ -25,11 +25,11 @@
 }
 .section6-tabs-wrapper{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     min-width: 150px;
-    padding: 36px;
+    padding: 0 36px 36px 36px;
 }
 .section6-tabs{
     display: flex;
