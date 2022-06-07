@@ -22,11 +22,11 @@ const Section4 = () => {
         </div>
         <div className={styles["section4-video-info-wrapper"]}>
           <div className={styles["section4-video-info"]}>
-            <h4 className={styles["section4-video-info-header"]}>       
-              <span> Das sagen unsere Partner.</span>
-              <span>Steffen Männle</span>
+            <h4 className={styles["section4-video-info-header"]}>    
+                 Das sagen unsere Partner.   
             </h4>
             <p className={styles["section4-video-info-body"]}>
+              <h4 className={styles["section4-video-info-body-header"]}>Steffen Männle</h4>
               <span>Pur Natur</span> Managing Director Sales & Marketing
             </p>
           </div>

@@ -28,3 +28,20 @@
     margin-bottom: 40px;
     text-align: center;
 }
+@media (max-width: 992px){
+    .section2-slice1{
+        width: 90%;
+    }
+    .section2-slice2{
+        width: 90%;
+    }
+}
+
+@media (max-width: 420px){
+    .section2-slice1{
+        width: 90%;
+    }
+    .section2-slice2{
+        width: 90%;
+    }
+}

@@ -3,11 +3,21 @@ import styles from "./section5.module.scss";
 import Schedule from "../../icons/Schedule";
 import Control from "../../icons/Control";
 import FundView from "../../icons/FundView";
+import { useEffect, useRef } from "react";
+import { useDispatch } from "react-redux";
+import { setSection5 } from "../../redux/slice/vendorsPageSlice";
 
 function Section5() {
+  let dispatch = useDispatch()
+  let ref = useRef();
+  
+  useEffect(()=> {
+    let y = ref.current ? ref.current.offsetTop: null
+    dispatch(setSection5(y))
+  } , [dispatch ,ref])
   return (
-    <div className={styles["section5-container"]}>
-      <div className={styles["section5"]}>
+    <div className={styles["section5-container"]} >
+      <div className={styles["section5"]} ref={ref}>
         <h2 className={styles["section5-container-header"]}>
           Es wird Zeit zu Handeln
         </h2>

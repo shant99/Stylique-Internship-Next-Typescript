@@ -56,8 +56,23 @@
     font-family: 'EudoxusSansLight';
 }
 
-@media (max-width: 626px){
+@media (max-width: 926px){
     .section8-list-ul{
         grid-template: auto / 1fr;
+    }
+    .section8-header{
+        width: 90%;
+    }
+    .section8-description{
+        width: 90%;
+    }
+}
+
+@media (max-width:420px){
+    .section8-header{
+        width: 100%;
+    }
+    .section8-description{
+        width: 100%;
     }
 }

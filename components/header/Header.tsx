@@ -22,7 +22,7 @@ const Header: React.FC = () => {
     const clickHandler1 = () => {
       window.scroll({
         behavior: "smooth",
-        top: section2,
+        top: section2 + 100,
       });
       setHeaderBurger((prev:boolean) => !prev);
     }
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
     const clickHandler4 = () => {
       window.scroll({
         behavior: "smooth",
-        top: section5,
+        top: section5 + 150,
       });
       setHeaderBurger((prev:boolean) => !prev);
     }

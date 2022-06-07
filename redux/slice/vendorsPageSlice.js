@@ -32,11 +32,11 @@ const vendorsPageSlice = createSlice({
     setSection4: (state, action) => {
       state.section4 = action.payload;
     },
-    // setSection5: (state, action) => {
-    //   state.section5 = action.payload;
-    // },
+    setSection5: (state, action) => {
+      state.section5 = action.payload;
+    },
   },
 });
 
-export let { setSection2 , setSection3 ,setSection4  } = vendorsPageSlice.actions;
+export let { setSection2 , setSection3 ,setSection4 , setSection5 } = vendorsPageSlice.actions;
 export default vendorsPageSlice.reducer;

@@ -1,5 +1,5 @@
 import styles from "./section1.module.scss";
-import Trophy from "../../icons/Trophy.svg";  
+import Trophy from "../../icons/Trophy";  
 import Shop from "../../icons/Shop";
 import Hourglass from "../../icons/Hourglass";
 import ArrowDown from "../../icons/ArrowDown";
@@ -48,8 +48,7 @@ const Section1 = ({}) => {
 
       <div className={styles["under-image"]}>
         <div className={styles["under-image-slice"]}>
-          {/* <Trophy className={styles["under-image-slice-child1"]} /> */}
-
+          <Trophy className={styles["under-image-slice-child1"]} />
           <div>
             <p className={styles["under-image-slice-child2"]}>
               Spare Kosten und Mühe für den eigenen Online-Shop.

@@ -35,3 +35,13 @@
 .section7-button:hover{
     background-color: #ea4d62;
 }
+
+@media (max-width: 420px){
+    .section7-header2{
+        width: 100%;
+        font-size: 56px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 80px;
+    }
+}

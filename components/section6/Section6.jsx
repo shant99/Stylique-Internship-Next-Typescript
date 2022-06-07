@@ -5,7 +5,6 @@ import AngleDown from "../../icons/AngleDown";
 import AngleUp from "../../icons/AngleUp";
 import { motion } from "framer-motion";
 
-
 const tabs = [
   "Kostenlose Erstgespräch",
   "Integration deiner Produkte",
@@ -23,6 +22,7 @@ const tabsContent = [
 
 function Section6() {
   const [tabIndex, setTabIndex] = useState(0);
+  const [underContent, setUnderContent] = useState(false);
 
   function viewContent() {
     const arr = JSON.parse(JSON.stringify(tabsContent));
@@ -33,6 +33,7 @@ function Section6() {
 
   function tabClickHandler(e, index) {
     setTabIndex(index);
+    setUnderContent((prev) => !prev);
   }
 
   function tabsNavButtonClickHandler_Up(e) {
@@ -64,31 +65,44 @@ function Section6() {
             <div className={styles["section6-tabs"]}>
               {tabs.map((item, index) => {
                 return (
-                  <div key={v4()} className={styles["section6-tab-wrapper"]}>
-                    <button
-                      onClick={(e) => tabClickHandler(e, index)}
-                      key={v4()}
-                      className={
-                        styles["section6-tab"] +
-                        " " +
-                        (tabIndex === index
-                          ? styles["section6-tab-active"]
-                          : "")
-                      }
-                    >
-                      {item}
-                    </button>
-                    <span
-                      className={
-                        styles["section6-tab-index"] +
-                        " " +
-                        (tabIndex === index
-                          ? styles["section6-tab-index-active"]
-                          : "")
-                      }
-                    >
-                      {index === tabs.length - 1 ? "!" : index}
-                    </span>
+                  <div key={v4()}>
+                    <div key={v4()} className={styles["section6-tab-wrapper"]}>
+                      <button
+                        onClick={(e) => tabClickHandler(e, index)}
+                        key={v4()}
+                        className={
+                          styles["section6-tab"] +
+                          " " +
+                          (tabIndex === index
+                            ? styles["section6-tab-active"]
+                            : "")
+                        }
+                      >
+                        {item}
+                      </button>
+                      <span
+                        className={
+                          styles["section6-tab-index"] +
+                          " " +
+                          (tabIndex === index
+                            ? styles["section6-tab-index-active"]
+                            : "")
+                        }
+                      >
+                        {index === tabs.length - 1 ? "!" : index + 1}
+                      </span>
+                    </div>
+                    {underContent ? (
+                      <motion.p                     initial={{ y: 100, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      exit={{ y: -10, opacity: 0 }}
+                      transition={{ duration: 0.8 }}
+                      className={styles["section6-tab-under-content"]}>
+                        {tabIndex === index ? tabsContent[tabIndex] : ""}
+                      </motion.p>
+                    ) : (
+                      ""
+                    )}
                   </div>
                 );
               })}
@@ -116,7 +130,7 @@ function Section6() {
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: -10, opacity: 0 }}
-                    transition={{ duration: 0.6 }}
+                    transition={{ duration: 0.8 }}
                     key={v4()}
                     className={styles["section6-tab-content"]}
                   >
@@ -129,7 +143,7 @@ function Section6() {
                   initial={{ y: 10, opacity: 0 }}
                   animate={{ y: 0, opacity: 0.5 }}
                   exit={{ y: -10, opacity: 0 }}
-                  transition={{ duration: 0.4 }}
+                  transition={{ duration: 0.6 }}
                   key={v4()}
                   className={styles["section6-tab-content"]}
                 >
