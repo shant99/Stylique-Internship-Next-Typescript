@@ -1,0 +1,23 @@
+.section9-container{
+    width: 100%;
+    height: auto;
+    padding: 0 140px 96px 140px;
+}
+.section9{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section9-header{
+    width: 70%;
+    font-size: 56px;
+    font-weight: 800;
+    text-align: center;
+    color: #191919;
+    font-family: 'EudoxusSansRegular';
+    margin-bottom: 64px;
+}
+.section9-player-wrapper{
+    width: 100%;
+}

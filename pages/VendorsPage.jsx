@@ -9,6 +9,7 @@ import Section5 from "../components/section5/Section5.jsx";
 import Section6 from "../components/section6/Section6.jsx";
 import Section7 from "../components/section7/Section7.jsx";
 import Section8 from "../components/section8/Section8.jsx";
+import Section9 from "../components/section9/Section9.jsx";
 import Footer from "../components/footer/Footer";
 import { Provider } from "react-redux";
 import store from "../redux/store";
@@ -28,6 +29,7 @@ const VendorsPage = () => {
         <Section6 />
         <Section7 />
         <Section8 />
+        <Section9 />
         <Footer />
       </Provider>
     </div>

@@ -1,3 +1,63 @@
 .section8-container{
-    
+    width: 100%;
+    height: auto;
+    padding: 80px 40px;
+}
+.section8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section8-header{
+    width: 60%;
+    font-weight: 500;
+    font-size: 32px;
+    font-family: 'EudoxusSansRegular';
+    text-align: center;
+    margin-bottom: 24px;
+}
+.section8-description{
+    width: 30%;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'EudoxusSansLight';
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section8-list-ul{
+    margin-bottom: 95px;
+    display: grid;
+    grid-template: auto / repeat(2 , 1fr);
+    justify-items: flex-start;
+    gap: 40px;
+}
+.section8-list-li{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+.section8-list-li-Tick{
+    width: 32px;
+    height: 32px;
+    background-color: #F7F7F8;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.section8-list-li-text{
+    max-width: 240px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: start;
+    font-family: 'EudoxusSansLight';
+}
+
+@media (max-width: 626px){
+    .section8-list-ul{
+        grid-template: auto / 1fr;
+    }
 }

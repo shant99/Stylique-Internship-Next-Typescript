@@ -1,3 +1,37 @@
 .section7-container{
-    
+    width: 100%;
+    height: auto;
+    background-color: #191919;
+    padding: 160px 50px;
+}
+.section7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section7-header1{
+    font-size: 28px;
+    text-align: center;
+    font-family: 'EudoxusSansRegular';
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.section7-header2{
+    width: 60%;
+    font-size: 56px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 80px;
+}
+.section7-button{
+    background-color: #E5324B;
+    border: none;
+    padding: 12px 44px;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: 'EudoxusSansLight';
+}
+.section7-button:hover{
+    background-color: #ea4d62;
 }
