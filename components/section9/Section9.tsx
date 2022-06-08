@@ -1,7 +1,8 @@
 import Player from "../player/Player";
 import styles from "./section9.module.scss";
+import TrophySvg from "../../public/svg/Trophy.svg"
 
-function Section9() {
+const Section9: React.FC = () =>  {
   return (
     <div className={styles["section9-container"]}>
       <div className={styles["section9"]}>

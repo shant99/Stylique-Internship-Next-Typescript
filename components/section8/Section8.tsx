@@ -3,14 +3,14 @@ import styles from "./section8.module.scss";
 import { v4 } from "uuid";
 import Tick from "../../icons/Tick";
 
-const arr = [
+const arr: string[] = [
   "STYLIQUE ist ein Marktplatz. Ein Werkzeug, um deine Online-Präsenz voranzutreiben.",
   "Alle relevanten Akteure für Produkte - von der Herstellung bis zum Bauherren an einem Ort.",
   "Durch digitale Vernetzung sicherst du dir nachhaltige Partnerschaften.",
   "Digitale und persönliche Unterstützung in Marketing, Verkauf und Service. ",
 ];
 
-function Section8() {
+const Section8: React.FC = () => {
   return (
     <div className={styles["section8-container"]}>
       <div className={styles["section8"]}>
@@ -34,10 +34,10 @@ function Section8() {
             );
           })}
         </ul>
-        <ButtonTermin />
+        <ButtonTermin clickHandler={undefined} />
       </div>
     </div>
   );
-}
+};
 
 export default Section8;

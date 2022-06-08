@@ -4,13 +4,14 @@ import ButtonTermin from "../buttonTermin/ButtonTermin";
 import List from "./list/List";
 import styles from "./section2.module.scss";
 import { setSection2 } from "../../redux/slice/vendorsPageSlice";
+import React from "react";
 
 const Section2 = () => {
   let dispatch = useDispatch()
-  let ref = useRef();
+  let ref: any  = useRef<HTMLDivElement>();
   
   useEffect(()=> {
-    let y = ref.current ? ref.current.offsetTop: null
+    let y: number | null = ref.current ? (ref.current.offsetTop) : null
     dispatch(setSection2(y))
   } , [dispatch ,ref])
 

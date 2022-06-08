@@ -1,16 +1,15 @@
 import styles from "./section4.module.scss";
-import ReactPlayer from "react-player";
 import { useEffect, useRef, useState } from "react";
 import { setSection4 } from "../../redux/slice/vendorsPageSlice";
 import { useDispatch } from "react-redux";
 import Player from "../player/Player";
 
-const Section4 = () => {
-  const ref = useRef();
+const Section4: React.FC = () => {
+  const ref: any = useRef<HTMLDivElement>();
   const dispatch = useDispatch();
 
   useEffect(() => {
-    let y = ref.current ? ref.current.offsetTop : null;
+    let y: number | null = ref.current ? ref.current.offsetTop : null;
     dispatch(setSection4(y));
   }, [dispatch, ref]);
 

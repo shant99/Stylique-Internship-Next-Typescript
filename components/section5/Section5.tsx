@@ -7,16 +7,16 @@ import { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { setSection5 } from "../../redux/slice/vendorsPageSlice";
 
-function Section5() {
-  let dispatch = useDispatch()
-  let ref = useRef();
-  
-  useEffect(()=> {
-    let y = ref.current ? ref.current.offsetTop: null
-    dispatch(setSection5(y))
-  } , [dispatch ,ref])
+const Section5: React.FC = () => {
+  let dispatch = useDispatch();
+  let ref: any = useRef<HTMLDivElement>();
+
+  useEffect(() => {
+    let y: number | null = ref.current ? ref.current.offsetTop : null;
+    dispatch(setSection5(y));
+  }, [dispatch, ref]);
   return (
-    <div className={styles["section5-container"]} >
+    <div className={styles["section5-container"]}>
       <div className={styles["section5"]} ref={ref}>
         <h2 className={styles["section5-container-header"]}>
           Es wird Zeit zu Handeln
@@ -24,7 +24,7 @@ function Section5() {
         <div className={styles["section5-container-body"]}>
           <div className={styles["section5-container-body-slice"]}>
             <span className={styles["section5-container-body-slice-span"]}>
-            <Schedule />
+              <Schedule />
             </span>
             <p>
               <span>1.</span> <span>Beratungstermin reservieren</span>{" "}
@@ -32,8 +32,7 @@ function Section5() {
           </div>
           <div className={styles["section5-container-body-slice"]}>
             <span className={styles["section5-container-body-slice-span"]}>
-
-            <Control />
+              <Control />
             </span>
             <p>
               <span>2.</span> <span>Unverbindlich testen</span>{" "}
@@ -41,18 +40,17 @@ function Section5() {
           </div>
           <div className={styles["section5-container-body-slice"]}>
             <span className={styles["section5-container-body-slice-span"]}>
-
-            <FundView />
+              <FundView />
             </span>
             <p>
               <span>3.</span> <span>Potenzial entdecken</span>{" "}
             </p>
           </div>
         </div>
-        <ButtonTermin />
+        <ButtonTermin clickHandler={undefined} />
       </div>
     </div>
   );
-}
+};
 
 export default Section5;

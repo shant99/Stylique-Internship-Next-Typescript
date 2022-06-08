@@ -5,14 +5,14 @@ import AngleDown from "../../icons/AngleDown";
 import AngleUp from "../../icons/AngleUp";
 import { motion } from "framer-motion";
 
-const tabs = [
+const tabs: string[] = [
   "Kostenlose Erstgespräch",
   "Integration deiner Produkte",
   "Effizientes Marketing",
   "Verkauf deiner Produkte",
   "Kein Risiko",
 ];
-const tabsContent = [
+const tabsContent: string[] = [
   "Gemeinsam ermitteln wir deinen Nutzen und den damit verbundenen Mehrwert für deine Kunden.",
   "Im Dialog erarbeiten wir deine Strategie inkl. Verkaufskonzept: Zielsetzung und Darstellung auf der Plattform Produktauswahl und -koordination Integration auf die Plattform: Problemlose Kopplung mit bereits gelisteten Produkten Informationen zu deinem Unternehmen und deinen Standorten werden für eine Offline-Online-Vernetzung integriert",
   "Sichtbarkeit:  Durch die Verknüpfung der Produkte mit vielen Inspirationen und Partnern erhälst du größere Reichweite  Du entscheidest selbst ...  ... in welchem Umkreis du sichtbar bist ... welche Preise die jeweilige Zielgruppen sehen  Du willst noch mehr Reichweite?  Nimm an exklusiven Kampagnen teil. Wie z.B.: Marketingaktivitäten Kataloge für Architekten  Architekten-Muster-Schränke Ausschreibungen  Events u.v.m. Das Beste: Du erhälst wichtige Insights zu Kunden und Auswertungen von Kampagnen. ",
@@ -20,27 +20,28 @@ const tabsContent = [
   "Gemeinsam ermitteln wir deinen Nutzen und den damit verbundenen Mehrwert für deine Kunden.",
 ];
 
-function Section6() {
-  const [tabIndex, setTabIndex] = useState(0);
-  const [underContent, setUnderContent] = useState(true);
+const Section6: React.FC = () => {
+  const [tabIndex, setTabIndex] = useState<number>(0);
+  const [underContent, setUnderContent] = useState<boolean>(true);
 
-  function viewContent() {
-    const arr = JSON.parse(JSON.stringify(tabsContent));
+  function viewContent(): string[] {
+    const arr: string[] = JSON.parse(JSON.stringify(tabsContent));
     return arr.splice(tabIndex, 3);
   }
 
-  const viewTabsContent = viewContent();
+  const viewTabsContent: string[] = viewContent();
 
-  function tabClickHandler(e, index) {
-    setTabIndex(index);
-    setUnderContent((prev) => {
-      return !prev
-      
-    });
+  function tabClickHandler(e: React.SyntheticEvent, index: number): void {
+    setTabIndex((prev: number) => index);
+    if (index === tabIndex) {
+      setUnderContent(false);
+    } else {
+      setUnderContent(true);
+    }
   }
 
-  function tabsNavButtonClickHandler_Up(e) {
-    setTabIndex((prev) => {
+  function tabsNavButtonClickHandler_Up(e: React.SyntheticEvent): void {
+    setTabIndex((prev: number) => {
       if (prev === 0) {
         return tabs.length - 1;
       }
@@ -48,8 +49,8 @@ function Section6() {
     });
   }
 
-  function tabsNavButtonClickHandler_Down(e) {
-    setTabIndex((prev) => {
+  function tabsNavButtonClickHandler_Down(e: React.SyntheticEvent): void {
+    setTabIndex((prev: number) => {
       if (prev === tabs.length - 1) {
         return 0;
       }
@@ -89,21 +90,16 @@ function Section6() {
                           " " +
                           (tabIndex === index
                             ? styles["section6-tab-index-active"]
-                            : "")
+                            : styles[""])
                         }
                       >
                         {index === tabs.length - 1 ? "!" : index + 1}
                       </span>
                     </div>
-                    { (tabIndex === index )? (
-                      <motion.p                   
-                        initial={{ y: -100, opacity: 0 }}
-                      animate={{ y: 0, opacity: 1 }}
-                      exit={{ y: 10, opacity: 0 }}
-                      transition={{ duration: 0.8 }}
-                      className={styles["section6-tab-under-content"]}>
+                    {tabIndex === index && underContent ? (
+                      <p className={styles["section6-tab-under-content"]}>
                         {tabIndex === index ? tabsContent[tabIndex] : ""}
-                      </motion.p>
+                      </p>
                     ) : (
                       ""
                     )}
@@ -127,7 +123,7 @@ function Section6() {
             </div>
           </div>
           <div className={styles["section6-tabs-content"]}>
-            {viewTabsContent.map((item, index) => {
+            {viewTabsContent.map((item: string, index: number) => {
               if (!index) {
                 return (
                   <motion.p
@@ -160,6 +156,6 @@ function Section6() {
       </div>
     </div>
   );
-}
+};
 
 export default Section6;

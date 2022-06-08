@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import {  useEffect, useRef } from "react";
 import { setSection3 } from "../../redux/slice/vendorsPageSlice";
 
-const companiesIcons = [
+const companiesIcons: any = [
         <Jung key={v4()} className={styles["Jung-icon"]}/> ,
         <Mosaico key={v4()} className={styles["Mosaico-icon"]}/>,
         <ObjectCarpet key={v4()} className={styles["ObjectCarpet-icon"]}/> ,
@@ -15,12 +15,12 @@ const companiesIcons = [
         <Mosaico key={v4()} className={styles["Mosaico-icon"]}/>
 ]
 
-function Section3() {
+const Section3: React.FC = () => {
   const dispatch = useDispatch()
-  let ref = useRef();
+  let ref: any = useRef<HTMLDivElement>();
   
   useEffect(()=> {
-    let y = ref.current ? ( ref.current.offsetTop ): null
+    let y: number | null = ref.current ? ( ref.current.offsetTop ): null
     dispatch(setSection3(y))
   } ,  [dispatch ,ref])
 
@@ -32,7 +32,7 @@ function Section3() {
         </h2>
         <div className={styles["section3-companies-list"]}>
             {
-                companiesIcons.map(item => {
+                companiesIcons.map((item: any) => {
                     return <div key={v4()} className={styles["section3-companies-list-companie"]}>{item}</div>
                 })
             }
