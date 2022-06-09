@@ -24,7 +24,7 @@ function Player({url = ''}) {
         onClick={playHandler}
       />
     );
-  }, [isPlaying]);
+  }, [isPlaying, url]);
 
   return (
     <>
